@@ -1,0 +1,316 @@
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:o="http://omnifaces.org/ui"
+                xmlns:jsf="http://xmlns.jcp.org/jsf"
+                xmlns:p="http://primefaces.org/ui">
+    <!--header start-->
+    <header class="header fixed-top">
+        <h:form>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle hr-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <!--logo start-->
+                <!--logo start-->
+                <div class="brand ">
+                    <p:link class="logo" value="#{messages.AppNamee}" outcome="/pages/dashboard" />
+                </div>
+                <!--logo end-->
+                <!--logo end-->
+                <div class="horizontal-menu navbar-collapse collapse ">
+
+                    <ul class="nav navbar-nav">
+
+                        <li> <p:link value="#{messages.Dashboard}" outcome="/pages/dashboard" /></li>
+                        <li class="dropdown mega-dropdown">
+			    			<a href="#" class="dropdown-toggle" data-toggle="dropdown">#{messages['menu.generalSettings']}<span class="caret"></span></a>				
+							<ul class="dropdown-menu mega-dropdown-menu">
+								<li class="col-sm-3">
+			    					<ul>
+										<li class="dropdown-header">#{messages['menu.generalSettings.new']}</li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Contact']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Product']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Service']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Expense']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Discount']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.workBench']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.priceSchema']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.lifeStage']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.UserResource']}</a></li>
+									</ul>
+								</li>
+								<li class="col-sm-3">
+			    					<ul>
+										<li class="dropdown-header">#{messages['menu.generalSettings.currency']}</li>
+										<li><a href="#">#{messages['menu.generalSettings.browse.currencyRate']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.browse.currency']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.browse.currencyPair']}</a></li>
+									</ul>
+								</li>
+								<li class="col-sm-3">
+			    					<ul>
+										<li class="dropdown-header">#{messages['menu.generalSettings.bank']}</li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Contact']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Product']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Service']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Expense']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Discount']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.workBench']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.priceSchema']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.lifeStage']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.UserResource']}</a></li>
+									</ul>
+								</li>
+								<li class="col-sm-3">
+			    					<ul>
+										<li class="dropdown-header">#{messages['menu.generalSettings.bank']}</li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Contact']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Product']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Service']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Expense']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Discount']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.workBench']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.priceSchema']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.lifeStage']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.UserResource']}</a></li>
+									</ul>
+								</li>
+								<li class="col-sm-3">
+			    					<ul>
+										<li class="dropdown-header">#{messages['menu.generalSettings.bank']}</li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Contact']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Product']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Service']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Expense']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Discount']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.workBench']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.priceSchema']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.lifeStage']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.UserResource']}</a></li>
+									</ul>
+								</li>
+								<li class="col-sm-3">
+			    					<ul>
+										<li class="dropdown-header">#{messages['menu.generalSettings.bank']}</li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Contact']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Product']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Service']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Expense']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Discount']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.workBench']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.priceSchema']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.lifeStage']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.UserResource']}</a></li>
+									</ul>
+								</li>
+								<li class="col-sm-3">
+			    					<ul>
+										<li class="dropdown-header">#{messages['menu.generalSettings.bank']}</li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Contact']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Product']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Service']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Expense']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Discount']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.workBench']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.priceSchema']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.lifeStage']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.UserResource']}</a></li>
+									</ul>
+								</li>
+								<li class="col-sm-3">
+			    					<ul>
+										<li class="dropdown-header">#{messages['menu.generalSettings.bank']}</li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Contact']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Product']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Service']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Expense']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Discount']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.workBench']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.priceSchema']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.lifeStage']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.UserResource']}</a></li>
+									</ul>
+								</li>
+								<li class="col-sm-3">
+			    					<ul>
+										<li class="dropdown-header">#{messages['menu.generalSettings.bank']}</li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Contact']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Product']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Service']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Expense']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Discount']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.workBench']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.priceSchema']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.lifeStage']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.UserResource']}</a></li>
+									</ul>
+								</li>
+								<li class="col-sm-3">
+			    					<ul>
+										<li class="dropdown-header">#{messages['menu.generalSettings.bank']}</li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Contact']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Product']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Service']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Expense']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.Discount']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.workBench']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.priceSchema']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.lifeStage']}</a></li>
+										<li><a href="#">#{messages['menu.generalSettings.new.UserResource']}</a></li>
+									</ul>
+								</li>
+							</ul>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#">#{messages.Sales}</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <p:link value="#{messages.Customers}" outcome="/pages/customer/index"/>
+                                </li>
+                                <li> 
+                                    <p:link value="#{messages.SalesOrders}" outcome="/pages/saleOrder/index"/>   
+                                </li>   
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#">#{messages.Purchases}</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <p:link value="#{messages.Vendors}" outcome="/pages/supplier/index"/>
+                                </li>
+                                <li> 
+                                    <p:link value="#{messages.PurchaseOrders}" outcome="/pages/purchaseOrder/index"/>   
+                                </li>   
+
+								<li class="dropdown-submenu"><a tabindex="-1" href="#">#{messages.Purchases} 1-2</a>
+									<ul class="dropdown-menu">
+										<li class="dropdown-submenu"><a tabindex="-1" href="#">#{messages.Purchases} 1-2-1</a>
+											<ul class="dropdown-menu">
+												<li><a tabindex="-1" href="#">#{messages.Purchases} 1-2-1-1</a></li>
+											</ul>
+										</li>
+										<li class="dropdown-submenu"><a tabindex="-1" href="#">#{messages.Purchases} 1-2-2</a>
+											<ul class="dropdown-menu">
+												<li><a tabindex="-1" href="#"><p:link rendered="#{ceberusIdentity.hasPermission('purchase122', 'select')}" value="#{messages.Purchases} 1-2-2-1" outcome="/pages/purchaseOrder/index"/></a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								</ul>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#">#{messages.Inventory}</a>
+                            <ul class="dropdown-menu">
+                                <li> <p:link value="#{messages.IncomingShipments}" outcome="/pages/supDeliveryOrder/index" /></li>
+                                <li> <p:link value="#{messages.DeliveryOrders}" outcome="/pages/deliveryOrder/index" /></li>
+                                <li> <p:link value="#{messages.Products}" outcome="/pages/product/index" /></li> 
+                                <li> <p:link value="#{messages.InventoryValuation}" outcome="/pages/inventory/index" /></li> 
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#">#{messages.Accounting}</a>
+                            <ul class="dropdown-menu">
+                                <li> <p:link value="#{messages.CustomerInvoices}" outcome="/pages/invoice/index"  /></li>
+                                <li> <p:link value="#{messages.CustomerPayments}" outcome="/pages/payment/index" /></li>
+                                <li> <p:link value="#{messages.VendorBills}" outcome="/pages/supInvoice/index" /></li>
+                                <li> <p:link value="#{messages.VendorPayments}" outcome="/pages/supPayment/index" /></li>
+                                <li> <p:link value="#{messages.JournalEntries}" outcome="/pages/journalEntry/index" /></li>
+                                <li> <p:link value="#{messages.JournalItems}" outcome="/pages/journalItem/index" /></li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#">#{messages.Configuration}</a>
+                            <ul class="dropdown-menu">
+                                <li> <p:link value="#{messages.Accounts}" outcome="/pages/account/index"  /></li>
+                                <li> <p:link value="#{messages.Journals}" outcome="/pages/journal/index" /></li>
+                                <li> <p:link value="#{messages.Taxess}" outcome="/pages/tax/index" /></li>
+                                <li> <p:link value="#{messages.Users}" outcome="/pages/userInfo/index" /></li>
+                                <li> <p:link value="#{messages.ProductCategories}" outcome="/pages/productCtg/index" /></li>
+                                <li> <p:link value="#{messages.UnitsOfMeasure}" outcome="/pages/productUom/index" /></li>
+                                <li> <p:link value="#{messages.ProductUomCategories}" outcome="/pages/productUomCtg/index" /></li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#">#{messages.Language}</a>
+                            <ul class="dropdown-menu">
+                                <li> 
+								    <p:commandLink actionListener="#{localeController.changeLanguage('en')}" ajax="true">
+										<h:outputText value="#{messages.LanguageEnglish}" />
+									</p:commandLink>
+								</li>
+                                <li> 
+								    <p:commandLink actionListener="#{localeController.changeLanguage('vi')}" ajax="true">
+										<h:outputText value="#{messages.LanguageVietnamese}" />
+									</p:commandLink>
+								</li>
+                            </ul>
+                        </li> 
+                    </ul>   
+					<ul class="nav navbar-nav">
+			<li class="dropdown mega-dropdown">
+    			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Women <span class="caret"></span></a>				
+				<ul class="dropdown-menu mega-dropdown-menu">
+					<li class="col-sm-3">
+    					<ul>
+							<li class="dropdown-header">Features</li>
+							<li><a href="#">Auto Carousel-#{messages['menu.generalSettings']}</a></li>
+                            <li><a href="#">Carousel Control</a></li>
+                            <li><a href="#">Left  Right Navigation</a></li>
+							<li><a href="#">Four Columns Grid</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Fonts</li>
+                            <li><a href="#">Glyphicon</a></li>
+							<li><a href="#">Google Fonts</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Plus</li>
+							<li><a href="#">Navbar Inverse</a></li>
+							<li><a href="#">Pull Right Elements</a></li>
+							<li><a href="#">Coloured Headers</a></li>                            
+							<li><a href="#">Primary Buttons  Default</a></li>							
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Much more</li>
+                            <li><a href="#">Easy to Customize</a></li>
+							<li><a href="#">Calls to action</a></li>
+							<li><a href="#">Custom Fonts</a></li>
+							<li><a href="#">Slide down on Hover</a></li>                         
+						</ul>
+					</li>
+				</ul>				
+			</li>
+		</ul>	
+                </div>
+                <div class="top-nav hr-top-nav">
+                    <ul class="nav pull-right top-menu">
+
+                        <!-- user login dropdown start-->
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <p:graphicImage rendered="#{userSessionController.user.image == null}"  value="#" name="img/e-lion.jpg" />
+                                <o:graphicImage rendered="#{userSessionController.user.image != null}"  value="#{userSessionController.user.image}" dataURI="true" />
+                                <span class="username">#{userSessionController.user.name}</span>
+                                <b class="caret"></b>
+                            </a>
+
+                            <ul class="dropdown-menu extended logout">
+                                <li><a jsf:action="#{userSessionController.doLogout}"><i class="fa fa-key"></i><h:outputText value="#{messages.Logout}" /></a></li>                             
+                            </ul>
+
+                        </li>
+                        <!-- user login dropdown end -->
+                    </ul>
+                </div>
+
+            </div>
+        </h:form> 
+    </header>
+</ui:composition>
+
