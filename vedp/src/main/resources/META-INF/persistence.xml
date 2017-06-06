@@ -3,7 +3,7 @@
   <persistence-unit name="pegaErpPU" transaction-type="JTA">
     <!--provider>org.eclipse.persistence.jpa.PersistenceProvider</provider-->
 	<provider>org.hibernate.ejb.HibernatePersistence</provider>
-    <jta-data-source>java:jboss/datasources/cerpMySqlDS</jta-data-source>
+    <jta-data-source>java:jboss/datasources/vEdpDS</jta-data-source>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
 		<property name="hibernate.hbm2ddl.auto" value="update"/>

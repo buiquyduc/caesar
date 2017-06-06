@@ -14,16 +14,12 @@
                     <span class="fa fa-bars"></span>
                 </button>
                 <!--logo start-->
-                <!--logo start-->
                 <div class="brand ">
-                    <p:link class="logo" value="#{messages.AppNamee}" outcome="/pages/dashboard" />
+                    <p:link class="logo" value="#{messages['general.app.title']}" title="SAIGON Great Eastern-Enterprise Resources Manager" outcome="/pages/dashboard" />
                 </div>
                 <!--logo end-->
-                <!--logo end-->
                 <div class="horizontal-menu navbar-collapse collapse ">
-
                     <ul class="nav navbar-nav">
-
                         <li> <p:link value="#{messages.Dashboard}" outcome="/pages/dashboard" /></li>
                         <li class="dropdown mega-dropdown">
 			    			<a href="#" class="dropdown-toggle" data-toggle="dropdown">#{messages['menu.generalSettings']}<span class="caret"></span></a>				
@@ -251,7 +247,7 @@
                     </ul>   
 					<ul class="nav navbar-nav">
 			<li class="dropdown mega-dropdown">
-    			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Women <span class="caret"></span></a>				
+    			<a href="#" class="dropdown-toggle" data-toggle="dropdown">#{messages['menu.addOns']}<span class="caret"></span></a>				
 				<ul class="dropdown-menu mega-dropdown-menu">
 					<li class="col-sm-3">
     					<ul>

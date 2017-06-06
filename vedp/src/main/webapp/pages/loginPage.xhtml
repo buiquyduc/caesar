@@ -8,7 +8,7 @@
 
 
     <h:head>
-        <title>#{messages.Login}&#160;#{messages.AppName}</title>
+        <title>#{messages.Login}&#160;#{messages['general.app.title']}</title>
 
         <script type="text/javascript">
             $(window).load(function () {
@@ -39,7 +39,7 @@
         <div class="container">
             <h:form id="login-form" class="form-signin">
                 <p:growl id="msgs" widgetVar="growl"/>
-                <h2 class="form-signin-heading" >#{messages.AppNamee}</h2>
+                <h2 class="form-signin-heading">#{messages['general.app.fullTitle']}</h2>
                 <div class="login-wrap">
                     <div class="user-login-info">
                         <div class="row">
@@ -61,7 +61,3 @@
         </div>
     </h:body>
 </html>
-
-
-
-

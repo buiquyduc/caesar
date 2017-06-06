@@ -5,15 +5,9 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui">
-
-
     <h:head>
-        
-        <title>#{messages.Dashboard}&#160;#{messages.AppName}</title>
-
+        <title>#{messages.Dashboard}&#160;#{messages['general.app.title']}</title>
         <script type="text/javascript">
-
-
             $(window).load(function () {
             $(".loader").fadeOut("slow");
             });</script>
@@ -44,14 +38,12 @@
         
         <script type="text/javascript">
            function redirectLogin(){
+			/*	
                alert("fffff");
-                window.location="http://www.tutorialspoint.com";
-                
+               window.location="http://www.tutorialspoint.com";
+            */    
             }
         </script>
-
-
-
     </h:head>
 
     <h:body class="full-width">

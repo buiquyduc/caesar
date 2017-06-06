@@ -148,7 +148,7 @@
                         <password>sa</password>
                     </security>
                 </datasource>
-                <datasource jta="true" jndi-name="java:jboss/datasources/cerpMySqlDS" pool-name="cerpPool" enabled="true" use-java-context="true" use-ccm="true">
+                <datasource jta="true" jndi-name="java:jboss/datasources/vEdpDS" pool-name="cerpPool" enabled="true" use-java-context="true" use-ccm="true">
                     <connection-url>jdbc:mysql://localhost:3306/sgge_erp?characterEncoding=utf-8</connection-url>
                     <driver>mysql-5-driver</driver>
                     <pool>
