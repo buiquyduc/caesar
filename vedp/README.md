@@ -52,14 +52,14 @@ Currently none
 * *username* : github  
 * *password* : github
 
-<a href="http://erp-mohammedbounaga.rhcloud.com/"><img src="https://allclouds.net/wp-content/uploads/2015/08/OpenShift-Logo-e1440595191561.png"/></a>
+<a href="http://vedp.rhcloud.com/"><img src="https://allclouds.net/wp-content/uploads/2015/08/OpenShift-Logo-e1440595191561.png"/></a>
 
 ## Bugs & Workaround
 
 
 ## Licensing
 
-Copyright 2016 Mohammed Bounaga
+Copyright 2016 DucBQ from CasarERP
 
 This work is licensed under <a rel="license" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License Version 2.0</a>.
 
